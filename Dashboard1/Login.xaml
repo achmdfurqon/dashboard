@@ -1,0 +1,26 @@
+﻿<Window x:Class="Dashboard1.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dashboard1"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="320" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3C0000" Offset="0"/>
+                <GradientStop Color="#FFC90000" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image Margin="110,55,109,266" Source="User.png" Stretch="Fill" Height="100" HorizontalAlignment="Center"/>
+        <Label Content="Username" HorizontalAlignment="Center" Margin="110,153,110,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Width="94"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="110,219,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="userLogin" HorizontalAlignment="Left" Height="25" Margin="54,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
+        <PasswordBox x:Name="passwordLogin" HorizontalAlignment="Left" Height="25" Margin="54,255,0,0"  VerticalAlignment="Top" Width="206"/>
+        <CheckBox x:Name="rememberMe" Content="Remember me" HorizontalAlignment="Left" Margin="54,285,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonLogin" Content="Login" HorizontalAlignment="Left" Margin="54,335,0,0" VerticalAlignment="Top" Width="75" Background="#FF4B0000" BorderBrush="Black" Click="ButtonLogin_Click"/>
+        <TextBlock x:Name="forgotPassword" HorizontalAlignment="Left" Margin="134,341,0,0" TextWrapping="Wrap" Text="Forgot Password?" VerticalAlignment="Top" Height="32" Width="126" TextAlignment="Center" FontSize="14"/>
+
+    </Grid>
+</Window>
